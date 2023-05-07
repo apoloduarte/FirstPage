@@ -1,0 +1,87 @@
+* {
+    /*Importante deixar padding e margem com 0 para aproveitar todo espaço da página
+    Box-sizing é uma ferramenta para adequar os elementos a formatação da página pelo que entendi */
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /*Cor:
+    Dá pra escolher cor pelo nome, # , ou rgba*/
+    color: rgba(2, 2, 31, 0.712);
+
+    /*Fonte
+    Exitem várias possíveis de usar, o principal é linkar no inicio e colocar a fonte aqui depois*/
+    font-family: 'Montserrat', sans-serif;;
+}
+
+ul {
+    list-style: none;    
+    }
+
+a {
+    text-decoration: none;
+}
+
+body {
+    /*No background dá pra usar apenas uma cor, imagem ou gradiente*/
+    width: 1300px;
+    height: 600px;
+    background-image: url(./Background_4.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    padding: 5px;
+    font-size: 20px;    
+}
+header ul li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+/*alinhamento de texto com essa função text-align*/
+}
+.name{
+    font-size: 40px;
+        }
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+/*Margin 0 auto > truque para texto voltar para centro */
+}
+.form {
+    width: 40%; 
+    display: flex;
+    
+}
+.form input {
+    width: 50%;}
+
+.form button {
+    width: 15%; 
+    padding: 5px 15px;
+    background-color: darkgray;
+    color: black;
+
+
+
+}
+/*dessa forma .form terá 40% do widht do pai que é o container,
+se o form input terá 50% do pai dele que é o .form
+O button por sua vez, terá 15% da largura do input*/
+
+
+
